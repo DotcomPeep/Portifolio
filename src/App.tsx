@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import * as C from './Global';
 import { Text } from "./helpers/text";
+import "./i18n/i18n";
 //import leoImage from './assets/lesteves.jpg';
 const LeoImage = require("./assets/lesteves.jpg") as string;
 const GithubLogo = require("./icons/githublogo.png")
@@ -11,16 +13,15 @@ const LinkedinLogo = require("./icons/linkedinlogo.png")
 const App = () => {
 
   const [theme, setTheme] = useState<string>('light')
-  const [language, setLanguage] = useState<string>('pt')
+  //const [language, setLanguage] = useState<string>('pt')
 
   const handleChangeTheme = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light')
   }
 
-  const handleChangeLanguage = () => {
-    language === 'pt' ? setLanguage('en') : setLanguage('pt') 
-  }
-
+  //const handleChangeLanguage = () => {
+  //  language === 'pt' ? setLanguage('en') : setLanguage('pt') 
+ //}
 
   return(
     <C.Container>
@@ -31,6 +32,12 @@ const App = () => {
           </C.ImageContainer> 
         </C.LeftContainer>
         <C.RightContainer>
+        <C.SelectLanguageContainer>
+          <select>
+            <option value="pt-BR">Português</option>
+            <option value="en-US">English</option>
+          </select>
+        </C.SelectLanguageContainer>
           <C.NameContainer>
             <C.textContainer>
               <C.Name>Leonardo Silva Esteves dos Santos</C.Name>
@@ -51,15 +58,15 @@ const App = () => {
       </C.MainContainer>
       <C.FooterContainer>
         <C.LogoContainer>
-          <a href="https://github.com/DotcomPeep">
+          <a href="https://www.instagram.com/leoo_esteves1/" target="_blank">
+          <C.IconContainer src={InstaLogo} alt="Icone do Instagram"></C.IconContainer></a>
+          <a href="https://twitter.com/LShishou" target="_blank">
+          <C.IconContainer src={TwitterLogo} alt="Icone do Twitter"></C.IconContainer></a>
+          <a href="https://www.linkedin.com/in/leonardo-silva-esteves-dos-santos-3bb8a8208/" target="_blank">
+          <C.IconContainer src={LinkedinLogo} alt="Icone do Linkedin"></C.IconContainer></a>
+          <a href="https://github.com/DotcomPeep" target="_blank">
           <C.IconContainer src={GithubLogo} alt="Icone do Github">
           </C.IconContainer></a>
-          <a href="https://www.instagram.com/leoo_esteves1/">
-          <C.IconContainer src={InstaLogo} alt="Icone do Instagram"></C.IconContainer></a>
-          <a href="https://twitter.com/LShishou">
-          <C.IconContainer src={TwitterLogo} alt="Icone do Twitter"></C.IconContainer></a>
-          <a href="https://www.linkedin.com/in/leonardo-silva-esteves-dos-santos-3bb8a8208/">
-          <C.IconContainer src={LinkedinLogo} alt="Icone do Linkedin"></C.IconContainer></a>
         </C.LogoContainer>
       </C.FooterContainer>
     </C.Container>

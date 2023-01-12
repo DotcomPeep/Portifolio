@@ -44,6 +44,18 @@ export const RightContainer = styled.div`
     background-color: #292d2c;
 `
 
+export const SelectLanguageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 250px;
+    height: 5vh;
+    //background-color: aquamarine;
+    top: 2vh;
+    left: 80%;
+`
+
 export const NameContainer = styled.div`
     width: 50%;
     height: 8vh;
@@ -52,7 +64,7 @@ export const NameContainer = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 15%;
+    top: 13%;
     left: 15%;
 `
 
@@ -65,7 +77,7 @@ export const Name = styled.div`
 `
 
 export const Age = styled.div`
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     position: relative;
@@ -83,9 +95,11 @@ export const TextRightContainer = styled.div`
     height: 40%;
     align-items: center;
     position: relative;
-    top: 20%;
+    align-items: center;
+    justify-content: center;
+    top: 18%;
     left: 2%;
-    //background-color:  yellow;
+    background-color:  #252226;
 `
 
 export const TextSocialMediaContainer = styled.div`
@@ -94,8 +108,8 @@ export const TextSocialMediaContainer = styled.div`
     //background-color: green;
     display: flex;
     align-items: center;
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 35vh;
     left: 18%;
 `
 
@@ -117,7 +131,7 @@ export const textContainer = styled.div`
 
 export const LogoContainer = styled.div`
     width: 100%;
-    height: 70%;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,4 +143,5 @@ export const IconContainer = styled.img`
     margin: 20px;
     width: 128px;
     height: 128px;
+    -webkit-box-reflect: below -30px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
 `
