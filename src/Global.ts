@@ -80,7 +80,7 @@ export const Age = styled.div`
 
 export const TextRightContainer = styled.div`
     width: 90%;
-    height: 40%;
+    height: 35%;
     align-items: center;
     position: relative;
     top: 20%;
@@ -95,7 +95,7 @@ export const TextSocialMediaContainer = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    top: 50%;
+    top: 30%;
     left: 18%;
 `
 
@@ -117,7 +117,7 @@ export const textContainer = styled.div`
 
 export const LogoContainer = styled.div`
     width: 100%;
-    height: 70%;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,4 +129,5 @@ export const IconContainer = styled.img`
     margin: 20px;
     width: 128px;
     height: 128px;
+    -webkit-box-reflect: below -40px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
 `

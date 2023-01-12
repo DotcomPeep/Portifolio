@@ -51,15 +51,15 @@ const App = () => {
       </C.MainContainer>
       <C.FooterContainer>
         <C.LogoContainer>
-          <a href="https://github.com/DotcomPeep">
+          <a href="https://www.instagram.com/leoo_esteves1/" target="_blank">
+          <C.IconContainer src={InstaLogo} alt="Icone do Instagram"></C.IconContainer></a>
+          <a href="https://twitter.com/LShishou" target="_blank">
+          <C.IconContainer src={TwitterLogo} alt="Icone do Twitter"></C.IconContainer></a>
+          <a href="https://www.linkedin.com/in/leonardo-silva-esteves-dos-santos-3bb8a8208/" target="_blank">
+          <C.IconContainer src={LinkedinLogo} alt="Icone do Linkedin"></C.IconContainer></a>
+          <a href="https://github.com/DotcomPeep" target="_blank">
           <C.IconContainer src={GithubLogo} alt="Icone do Github">
           </C.IconContainer></a>
-          <a href="https://www.instagram.com/leoo_esteves1/">
-          <C.IconContainer src={InstaLogo} alt="Icone do Instagram"></C.IconContainer></a>
-          <a href="https://twitter.com/LShishou">
-          <C.IconContainer src={TwitterLogo} alt="Icone do Twitter"></C.IconContainer></a>
-          <a href="https://www.linkedin.com/in/leonardo-silva-esteves-dos-santos-3bb8a8208/">
-          <C.IconContainer src={LinkedinLogo} alt="Icone do Linkedin"></C.IconContainer></a>
         </C.LogoContainer>
       </C.FooterContainer>
     </C.Container>
