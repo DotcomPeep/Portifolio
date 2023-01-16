@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import * as C from './Global';
 import { Text } from "./helpers/text";
-//import leoImage from './assets/lesteves.jpg';
+import Switch from 'react-switch'; 
+import { ThemeProvider } from "styled-components";
+//import { ThemeContext } from "styled-components";
+import { shade } from 'polished';
+import { darkTheme, lightTheme } from "./theme";
 const LeoImage = require("./assets/lesteves.jpg") as string;
 const GithubLogo = require("./icons/githublogo.png")
 const InstaLogo = require("./icons/instalogo.png")
@@ -10,19 +14,26 @@ const LinkedinLogo = require("./icons/linkedinlogo.png")
 
 const App = () => {
 
-  const [theme, setTheme] = useState<string>('light')
-  const [language, setLanguage] = useState<string>('pt')
+  const [theme, setTheme] = useState("dark");
 
-  const handleChangeTheme = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
-  }
+  const toggleTheme = () => {
+    if (theme === "light") {
+      window.localStorage.setItem("theme", "dark");
+      setTheme("dark");
+    } else {
+      window.localStorage.setItem("theme", "light");
+      setTheme("light");
+    }
+  };
 
-  const handleChangeLanguage = () => {
-    language === 'pt' ? setLanguage('en') : setLanguage('pt') 
-  }
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem("theme");
+    localTheme && setTheme(localTheme);
+  }, []);
 
 
   return(
+    <ThemeProvider theme={theme === "dark" ? lightTheme : darkTheme}>
     <C.Container>
       <C.MainContainer>
         <C.LeftContainer>
@@ -31,6 +42,18 @@ const App = () => {
           </C.ImageContainer> 
         </C.LeftContainer>
         <C.RightContainer>
+          <C.Switch>
+            <Switch 
+              onChange={toggleTheme}
+              checked={theme == 'dark'}
+              checkedIcon={false}
+              uncheckedIcon={false}
+              height={15}
+              width={40}
+              handleDiameter={20}
+              offColor={shade(0.15, "#CCE8CC")}
+              onColor={shade(0.15, "#6B8096")} />
+            </C.Switch>
           <C.NameContainer>
             <C.textContainer>
               <C.Name>Leonardo Silva Esteves dos Santos</C.Name>
@@ -63,6 +86,7 @@ const App = () => {
         </C.LogoContainer>
       </C.FooterContainer>
     </C.Container>
+    </ThemeProvider>
   )
 }
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    //background-color: #FF0000;
+    //background-color: #FFF;
 `
 
 export const ImageContainer = styled.div`
@@ -15,7 +15,7 @@ export const ImageContainer = styled.div`
     top: 170px;
     left: 60px;
     padding: 10px, 10px, 20px, 10px;
-    background-color: blue;
+    //background-color: blue;
 `
 
 export const image = styled.img`
@@ -28,20 +28,20 @@ export const image = styled.img`
 export const MainContainer = styled.div`
     width: 100%;
     height: 80vh;
-    //background-color: #000;
+    //background-color: #FFF;
     display: flex;
 `
 
 export const LeftContainer = styled.div`
     width: 30%;
     height: 80vh;
-    background-color: #292d2c;
+    background: ${({ theme }) => theme.body};
 `
 
 export const RightContainer = styled.div`
     width: 70%;
     height: 80vh;
-    background-color: #292d2c;
+    background: ${({ theme }) => theme.body};
 `
 
 export const NameContainer = styled.div`
@@ -102,7 +102,7 @@ export const TextSocialMediaContainer = styled.div`
 export const FooterContainer = styled.div`
     width: 100%;
     height: 20vh;
-    background-color: #292d2c;
+    background: ${({ theme }) => theme.body};
 `
 
 export const textContainer = styled.div`
@@ -111,13 +111,13 @@ export const textContainer = styled.div`
     font-weight: 800;
     text-decoration: none;
     text-align: left;
-    color: #fff;
+    color: ${({ theme }) => theme.text};
     line-height: 45px;
 `
 
 export const LogoContainer = styled.div`
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,5 +129,15 @@ export const IconContainer = styled.img`
     margin: 20px;
     width: 128px;
     height: 128px;
-    -webkit-box-reflect: below -40px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    -webkit-box-reflect: below -25px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+`
+
+export const Switch = styled.div` 
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    position: relative;
+    margin: 10px;
+    right: 40px;
+    //background-color: blue;
 `
