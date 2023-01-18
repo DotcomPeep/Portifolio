@@ -33,15 +33,26 @@ export const MainContainer = styled.div`
 `
 
 export const LeftContainer = styled.div`
+    min-width: 400px;
     width: 30%;
     height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    //justify-content: center;
+    position: relative;
     background: ${({ theme }) => theme.body};
+    //background-color: blue;
 `
 
 export const RightContainer = styled.div`
     width: 70%;
     height: 80vh;
+    //display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
     background: ${({ theme }) => theme.body};
+    //background-color: red;
 `
 
 export const NameContainer = styled.div`
@@ -65,7 +76,7 @@ export const Name = styled.div`
 `
 
 export const Age = styled.div`
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     position: relative;
@@ -83,20 +94,21 @@ export const TextRightContainer = styled.div`
     height: 35%;
     align-items: center;
     position: relative;
+    //display: flex;
     top: 20%;
     left: 2%;
     //background-color:  yellow;
 `
 
 export const TextSocialMediaContainer = styled.div`
-    width: 50%;
-    height: 10vh;
+    width: 220px;
+    height: 50px;
     //background-color: green;
     display: flex;
     align-items: center;
     position: relative;
-    top: 30%;
-    left: 18%;
+    top: 90px;
+    left: 238px;
 `
 
 export const FooterContainer = styled.div`
@@ -122,6 +134,7 @@ export const LogoContainer = styled.div`
     align-items: center;
     justify-content: center;
     //background-color: #fff;
+    min-width: 400px;
 `
 
 export const IconContainer = styled.img`
@@ -140,4 +153,16 @@ export const Switch = styled.div`
     margin: 10px;
     right: 40px;
     //background-color: blue;
+`
+
+export const ClickHere = styled.div`
+    width: 100px;
+    height: 40px;
+    top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: ${({ theme }) => theme.text};
+    //background-color: violet;
 `

@@ -16,7 +16,7 @@ const App = () => {
 
   const [theme, setTheme] = useState("dark");
 
-  const toggleTheme = () => {
+  const toggleTheme = () => {  //@mateusPPinh
     if (theme === "light") {
       window.localStorage.setItem("theme", "dark");
       setTheme("dark");
@@ -43,6 +43,9 @@ const App = () => {
         </C.LeftContainer>
         <C.RightContainer>
           <C.Switch>
+            <C.ClickHere>
+              <h5>Trocar de tema</h5>
+            </C.ClickHere>
             <Switch 
               onChange={toggleTheme}
               checked={theme == 'dark'}
@@ -51,8 +54,8 @@ const App = () => {
               height={15}
               width={40}
               handleDiameter={20}
-              offColor={shade(0.15, "#CCE8CC")}
-              onColor={shade(0.15, "#6B8096")} />
+              offColor={shade(0.15, "#D5D0CD")}
+              onColor={shade(0.15, "#272932")} />
             </C.Switch>
           <C.NameContainer>
             <C.textContainer>
