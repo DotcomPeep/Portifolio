@@ -31,7 +31,6 @@ const App = () => {
     localTheme && setTheme(localTheme);
   }, []);
 
-
   return(
     <ThemeProvider theme={theme === "dark" ? lightTheme : darkTheme}>
     <C.Container>
@@ -67,15 +66,15 @@ const App = () => {
             <C.textContainer>
               <Text/>
             </C.textContainer>
-            <C.TextSocialMediaContainer>
-              <C.textContainer>
-                <h1>Redes Sociais</h1>
-              </C.textContainer>
-            </C.TextSocialMediaContainer>
           </C.TextRightContainer>
         </C.RightContainer>
       </C.MainContainer>
       <C.FooterContainer>
+        <C.TextSocialMediaContainer>
+          <C.textContainer>
+            <h1>Redes Sociais</h1>
+          </C.textContainer>
+        </C.TextSocialMediaContainer>
         <C.LogoContainer>
           <a href="https://www.instagram.com/leoo_esteves1/" target="_blank">
           <C.IconContainer src={InstaLogo} alt="Icone do Instagram"></C.IconContainer></a>
