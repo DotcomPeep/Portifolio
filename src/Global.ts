@@ -114,7 +114,7 @@ export const RightContainer = styled.div`
         position: relative;
         min-width: 400px;
         width: 70%;
-        height: 100%;
+        //height: 20vh;
         min-width: 400px;
         min-height: 750px;
     }
@@ -254,8 +254,7 @@ export const FooterContainer = styled.div`
         display: flex;
         flex-direction: column;
         position: relative;
-        //background-color: aquamarine;
-
+        
         width: 100%;
         height: 30vh;
         top: 535px;
@@ -335,12 +334,14 @@ export const Switch = styled.div`
     @media (max-width: 400px) {
         //width: 300px;
         display: flex;
-        flex-direction: column;
+        //align-items: center;
+        //flex-direction: column;
         position: relative;
         //background-color: blue;
         margin: 10px;
-        right: 10px;
-        bottom: 300px;
+        //right: 10px;
+        left: 90px;
+        bottom: 325px;
     }
 `
 
@@ -363,5 +364,6 @@ export const ClickHere = styled.div`
         position: relative;
         //background-color: violet;
         margin: 10px;        
+        top: 18px;
     }
 `

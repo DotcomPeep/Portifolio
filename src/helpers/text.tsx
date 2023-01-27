@@ -3,12 +3,14 @@ import React from 'react';
 export const Text = () => {
     return(
         <h3>Seja bem vindo ao meu site pessoal, me chamo Leonardo e tenho 22 anos. Sou aficionado por tecnologia 
-            desde meu primeiro contato com um computador.</h3>
+            desde meu primeiro contato com um computador, sendo assim, busco aprender e entender cada vez mais
+            sobre.</h3>
     )
 }
 
 /*Seja bem vindo ao meu site pessoal, me chamo Leonardo e tenho 22 anos. Sou aficionado por tecnologia desde
-            meu primeiro contato com um computador*/
+    meu primeiro contato com um computador, sendo assim, busco aprender e entender cada vez mais sobre.
+    */
 
 /*Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
