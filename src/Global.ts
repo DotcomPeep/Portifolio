@@ -11,7 +11,7 @@ export const Container = styled.div`
         flex-direction: column;
         position: relative;
         min-width: 400px;
-        max-height: 100%;
+        max-height: 874px;
     }
 `
 
@@ -32,9 +32,9 @@ export const ImageContainer = styled.div`
         display: flex;
         flex-direction: column;
         position: relative;
-        //height: 50%;
-        //width: 50%;
-        //right: 32%;
+        height: 100%;
+        width: 85%;
+        left: 20px;
     }
 `
 
@@ -52,8 +52,8 @@ export const image = styled.img`
         position: relative;
         object-fit: cover;
         height: 50%;
-        width: 50%;
-        right: 20%;
+        width: 60%;
+        //right: 20%;
         bottom: 45px;
     }
 `
@@ -71,7 +71,7 @@ export const MainContainer = styled.div`
         flex-direction: column;
         position: relative;
         min-width: 400px;
-        max-height: 100%;
+        max-height: 874px;
     }
 `
 
@@ -134,12 +134,9 @@ export const NameContainer = styled.div`
 
     @media (max-width: 400px) {
         height: 5vh;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        font-weight: 800;
+        width: 60%;
         text-decoration: none;
         text-align: left;
-        color: ${({ theme }) => theme.text};
     }
 `
 
@@ -152,11 +149,12 @@ export const Name = styled.div`
     width: 100%;
     font-size: 20px;
     font-weight: 800;
+    //background-color: brown;
 
 
     @media (max-width: 400px) {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 800;
         text-decoration: none;
         text-align: left;
@@ -183,7 +181,7 @@ export const Age = styled.div`
 
     @media (max-width: 400px) {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 11px;
+        font-size: 13px;
         font-weight: 800;
         text-decoration: none;
         text-align: left;
@@ -214,7 +212,8 @@ export const TextRightContainer = styled.div`
         width: 70%;
         height: 100%;
         top: 210px;
-        left: -238px;
+        left: -240px;
+        //padding: 5px;
     }
 `
 
@@ -229,6 +228,19 @@ export const TextSocialMediaContainer = styled.div`
     flex-wrap: wrap;
     top: 5px;
     left: 860px;
+
+    @media (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        //background-color: green;
+
+        //width: 100%;
+        //height: 30vh;
+        bottom: 30px;
+        left: 75px;
+        max-height: 100%;
+    }
 `
 
 export const FooterContainer = styled.div`
@@ -242,6 +254,7 @@ export const FooterContainer = styled.div`
         display: flex;
         flex-direction: column;
         position: relative;
+        //background-color: aquamarine;
 
         width: 100%;
         height: 30vh;
@@ -262,10 +275,10 @@ export const textContainer = styled.div`
 
     @media (max-width: 400px) {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 800;
         text-decoration: none;
-        text-align: left;
+        text-align: center;
         color: ${({ theme }) => theme.text};
         line-height: 45px;
     }
@@ -278,7 +291,7 @@ export const LogoContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    //background-color: #fff;
+    //background-color: #fff000;
     min-width: 400px;
 
 
@@ -320,9 +333,11 @@ export const Switch = styled.div`
 
 
     @media (max-width: 400px) {
+        //width: 300px;
         display: flex;
         flex-direction: column;
         position: relative;
+        //background-color: blue;
         margin: 10px;
         right: 10px;
         bottom: 300px;
@@ -346,6 +361,7 @@ export const ClickHere = styled.div`
         display: flex;
         flex-direction: column;
         position: relative;
+        //background-color: violet;
         margin: 10px;        
     }
 `
