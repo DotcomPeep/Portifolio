@@ -4,8 +4,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     //background-color: #FFF;
-
-
+    
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
@@ -25,9 +24,7 @@ export const ImageContainer = styled.div`
     top: 170px;
     left: 60px;
     padding: 10px, 10px, 20px, 10px;
-    //background-color: blue;
-
-
+    
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
@@ -43,9 +40,7 @@ export const image = styled.img`
     width: 100%;
     height: 100%;
     border-radius: 225px;
-    flex-wrap: wrap;
-
-
+    
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
@@ -53,7 +48,6 @@ export const image = styled.img`
         object-fit: cover;
         height: 50%;
         width: 60%;
-        //right: 20%;
         bottom: 45px;
     }
 `
@@ -63,8 +57,6 @@ export const MainContainer = styled.div`
     height: 70vh;
     //background-color: #FFF;
     display: flex;
-    //flex-wrap: wrap;
-
 
     @media (max-width: 400px) {
         display: flex;
@@ -81,12 +73,10 @@ export const LeftContainer = styled.div`
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    //justify-content: center;
     position: relative;
     background: ${({ theme }) => theme.body};
     //background-color: blue;
-
-
+    
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
@@ -106,15 +96,13 @@ export const RightContainer = styled.div`
     flex-wrap: wrap;
     background: ${({ theme }) => theme.body};
     //background-color: red;
-
-
+    
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
         position: relative;
         min-width: 400px;
         width: 70%;
-        //height: 20vh;
         min-width: 400px;
         min-height: 750px;
     }
@@ -131,7 +119,7 @@ export const NameContainer = styled.div`
     flex-wrap: wrap;
     top: 15%;
     left: 15%;
-
+    
     @media (max-width: 400px) {
         height: 5vh;
         width: 60%;
@@ -150,8 +138,7 @@ export const Name = styled.div`
     font-size: 20px;
     font-weight: 800;
     //background-color: brown;
-
-
+    
     @media (max-width: 400px) {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
@@ -177,8 +164,7 @@ export const Age = styled.div`
     left: 30%;
     font-size: 20px;
     font-weight: 800;
-
-
+    
     @media (max-width: 400px) {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 13px;
@@ -201,7 +187,6 @@ export const TextRightContainer = styled.div`
     left: 2%;
     //background-color:  blueviolet;
     flex-wrap: wrap;
-
     
     @media (max-width: 400px) {
         display: flex;
@@ -228,13 +213,12 @@ export const TextSocialMediaContainer = styled.div`
     flex-wrap: wrap;
     top: 5px;
     left: 860px;
-
+    
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
         position: relative;
         //background-color: green;
-
         //width: 100%;
         //height: 30vh;
         bottom: 30px;
@@ -248,8 +232,7 @@ export const FooterContainer = styled.div`
     height: 30vh;
     background: ${({ theme }) => theme.body};
     //background-color: aquamarine;
-
-
+    
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
@@ -270,8 +253,7 @@ export const textContainer = styled.div`
     text-align: left;
     color: ${({ theme }) => theme.text};
     line-height: 45px;
-
-
+    
     @media (max-width: 400px) {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
@@ -292,8 +274,7 @@ export const LogoContainer = styled.div`
     flex-wrap: wrap;
     //background-color: #fff000;
     min-width: 400px;
-
-
+    
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
@@ -309,8 +290,7 @@ export const IconContainer = styled.img`
     width: 110px;
     height: 110px;
     -webkit-box-reflect: below -25px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-
-
+    
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
@@ -329,8 +309,7 @@ export const Switch = styled.div`
     margin: 10px;
     right: 40px;
     //background-color: blue;
-
-
+    
     @media (max-width: 400px) {
         //width: 300px;
         display: flex;
@@ -355,9 +334,6 @@ export const ClickHere = styled.div`
     position: relative;
     color: ${({ theme }) => theme.text};
     //background-color: violet;
-
-
-
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;

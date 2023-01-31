@@ -3,18 +3,12 @@ import React from 'react';
 export const Text = () => {
     return(
         <h3>Seja bem vindo ao meu site pessoal, me chamo Leonardo e tenho 22 anos. Sou aficionado por tecnologia 
-            desde meu primeiro contato com um computador, sendo assim, busco aprender e entender cada vez mais
-            sobre.</h3>
+        desde meu primeiro contato com um computador. No momento estou estudando Ciências da Computação e 
+        fazendo cursos na plataforma Alura. Almejo me tornar um excelente programador, logo, tento aprofundar 
+        cada vez mais meu conhecimento e meu entendimento sobre tecnologia e inovação.</h3>
     )
 }
 
-/*Seja bem vindo ao meu site pessoal, me chamo Leonardo e tenho 22 anos. Sou aficionado por tecnologia desde
-    meu primeiro contato com um computador, sendo assim, busco aprender e entender cada vez mais sobre.
-    */
-
-/*Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-        took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. */
+/* Meu nome é Leonardo e sou a futura lenda do mercado tecnológico. Acompanhem os próximos capítulos da minha 
+saga de sucesso, pois é isso que está reservado pra mim, já que sou inteligente, legal e confiável"
+~By Bellyzinha */
