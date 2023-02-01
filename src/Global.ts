@@ -205,22 +205,20 @@ export const TextRightContainer = styled.div`
 export const TextSocialMediaContainer = styled.div`
     width: 220px;
     height: 4vh;
+    flex-direction: column;
     //background-color: green;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: center;
     flex-wrap: wrap;
-    top: 5px;
-    left: 860px;
+    //top: 10px;
+    left: 43%;
     
     @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
         position: relative;
-        //background-color: green;
-        //width: 100%;
-        //height: 30vh;
         bottom: 30px;
         left: 75px;
         max-height: 100%;
